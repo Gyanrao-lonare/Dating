@@ -1,0 +1,48 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container container-fluid">
+      <a class="navbar-brand" routerLink="home">AgDotNet</a>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+<div>
+        <ul *ngIf="(accountService.currentUser$ | async) !== null" class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" routerLink="lists">Lists</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="memberlist">Members</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " routerLink="messages">Messages</a>
+          </li>
+          <li  *appHasRole='["Admin", "Moderator"]' class="nav-item">
+            <a class="nav-link " routerLink="admin">Admin</a>
+          </li>
+        </ul>
+        <ul *ngIf="(accountService.currentUser$ | async) === null" class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link " routerLink="errors">errors</a>
+        </li>
+      </ul>
+    </div>
+       
+      </div>
+      <div class="dropdown" *ngIf="(accountService.currentUser$ | async) as User" dropdown>
+       <img [src]="User.photoUrl ? User.photoUrl : '../../assets/images/userImg.png'" alt="{{User.photoUrl}}" width="40" height="40">
+        <a class="dropdown-toggle m-2 " dropdownToggle>WellCome {{User && User.username}} </a>
+        <div class="dropdown-menu mt-3" *dropdownMenu>
+          <a routerLink="userprofile" class="dropdown-item">Edit Profile</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" (click)="logOut()">LogOut</a>
+    
+        </div> 
+    </div>   
+    
+      <div style="text-align:end">    
+        <form *ngIf="(accountService.currentUser$ | async) === null" class="d-flex" #loginForm="ngForm" (ngSubmit)="onlogin()">
+          <input class="form-control me-2" type="text"  [(ngModel)]="loginModal.username" name="username" placeholder="Username">
+          <input class="form-control me-2" type="password"  [(ngModel)]="loginModal.password" name="password" placeholder="Password">
+          <button class="btn btn-outline-success" type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+    
+  </nav>

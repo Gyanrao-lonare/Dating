@@ -1,0 +1,65 @@
+<div class="container " style="margin-top: 5%; width: 500px;">
+    <!-- <form #registerForm="ngForm" (ngSubmit)="register()">
+        <h4 class="text-center">Register Here</h4>
+        <hr>
+        <div class="form-group m-4">
+            <input type="text" name="username" [(ngModel)]="registerModal.username" class="form-control" placeholder="username">
+        </div>
+        <div class="form-group m-4">
+            <input type="password" class="form-control" name="password" [(ngModel)]="registerModal.password" placeholder="password">
+        </div>
+        <div class="form-group text-center" >
+            <button type="submit" class="btn btn-primary btn-lg m-2"> Submit</button>
+            <button type="button" (click)="route.navigateByUrl('')" class="btn btn-warning btn-lg m-2"> Cancel</button>
+        </div>
+
+    </form> -->
+
+    <form [formGroup]="registerForm" (ngSubmit)="register()" autocomplete="off">
+        <h1 class="text-center text-primary">Sign Up</h1>
+        <hr />
+        <div class="form-group">
+          <label class="control-label" style="margin-right: 10px">I am a:</label>
+          <label class="radio-inline">
+            <input type="radio" value="male" formControlName="gender" />Male
+          </label>
+          <label class="radio-inline">
+            <input type="radio" value="female" formControlName="gender" />Female
+          </label>
+        </div>
+        <app-text-input
+          [formControl]="registerForm.controls['username']"
+          [label]="'Username'"
+        ></app-text-input>
+        <app-text-input
+          [formControl]="registerForm.controls['KnownAs']"
+          [label]="'KnownAs'"
+        ></app-text-input>
+        <app-date-input
+          [formControl]="registerForm.controls['dateOFBirth']"
+          [label]="'Date Of Birth'" [maxDate]="maxDate"></app-date-input>
+        <app-text-input
+          [formControl]="registerForm.controls['city']"
+          [label]="'City'"
+        ></app-text-input>
+        <app-text-input
+          [formControl]="registerForm.controls['country']"
+          [label]="'Country'"
+        ></app-text-input>
+        <app-text-input
+        [formControl]="registerForm.controls['password']"
+        [label]="'Password'"
+      ></app-text-input>
+      
+      <app-text-input
+        [formControl]="registerForm.controls['confirmPassword']"
+        [label]="'Confirm Password'"
+      ></app-text-input>
+        <div class="form-group text-center">
+          <button class="btn btn-primary m-2" type="submit">Submit</button>
+          <a routerLink="home"> <button class="btn btn-info m-2" type="button">
+            Cancel
+          </button></a>
+        </div>
+      </form>
+</div>
