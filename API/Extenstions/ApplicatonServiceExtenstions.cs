@@ -8,7 +8,6 @@ using Microsoft.EntityFrameworkCore;
 using MySql.Data.MySqlClient;
 using API.Helpers;
 using API.SignalR;
-using MySQL.Data.EntityFrameworkCore.Extensions;
 
 namespace API.Extenstions
 {
@@ -30,7 +29,7 @@ namespace API.Extenstions
             services.AddScoped<LogUserActivity>();
             services.AddDbContext<DataContext>(options =>
                    {
-                       options.UseMySQL(config.GetConnectionString("DefaultConnection1"));
+                    //    options.UseMySQL(config.GetConnectionString("DefaultConnection1"));
                     //    options.UseSqlite(config.GetConnectionString("DefaultConnection"));
                    });
             return services;

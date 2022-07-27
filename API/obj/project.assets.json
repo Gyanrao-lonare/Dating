@@ -7368,11 +7368,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\AgDotNet\\AgDotNetApp\\API\\API.csproj",
+      "projectUniqueName": "D:\\AgDotNet\\Dating\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "d:\\AgDotNet\\AgDotNetApp\\API\\API.csproj",
+      "projectPath": "D:\\AgDotNet\\Dating\\API\\API.csproj",
       "packagesPath": "C:\\Users\\gyanrao\\.nuget\\packages\\",
-      "outputPath": "d:\\AgDotNet\\AgDotNetApp\\API\\obj\\",
+      "outputPath": "D:\\AgDotNet\\Dating\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gyanrao\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "v96/AWFMXCryigLlx8eb9tmV0OkslxkB84ZnGKOqyeDw4OIHl20twq53kTwZ6QafrkTN6nG1nErT4pZTBNn8aQ==",
+  "dgSpecHash": "yNXsAJh4PBF2C0onA2rdjKF8BxH736lxWjtd3TAL1zVeFDpuTUOBpfwejw+rkwvWkDLTFuUY1U3vONHoeIDJlg==",
   "success": true,
-  "projectFilePath": "D:\\AgDotNet\\AgDotNetApp\\API\\API.csproj",
+  "projectFilePath": "D:\\AgDotNet\\Dating\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gyanrao\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\gyanrao\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
