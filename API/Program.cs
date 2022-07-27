@@ -68,7 +68,7 @@ app.UseStaticFiles();
 app.MapControllers();
 app.MapHub<PresenceHub>("hubs/presence");
 app.MapHub<MessageHub>("hubs/message");
-// app.MapFallbackToController("Index", "Fallback");
+app.MapFallbackToController("Index", "Fallback");
 
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 // var host = CreateHostBuilder(args).Build();
