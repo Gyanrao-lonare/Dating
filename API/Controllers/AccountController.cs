@@ -80,10 +80,10 @@ namespace API.Controllers
             {
                 Username = user.UserName,
                 Token = await _tokenService.CreateToken(user),
-                PhotoUrl = "https://res.cloudinary.com/new-vision/image/upload/v1658751241/l9dhvem0az3ixepqb7lp.jpg",
+                // PhotoUrl = "https://res.cloudinary.com/new-vision/image/upload/v1658751241/l9dhvem0az3ixepqb7lp.jpg",
                 KnownAs = user.KnownAs,
                 Gender = user.Gender,
-                // PhotoUrl = user.Photos.FirstOrDefault(x => x.IsMain)?.Url
+                PhotoUrl = user.Photos.FirstOrDefault(x => x.IsMain)?.Url
             };
         }
 
