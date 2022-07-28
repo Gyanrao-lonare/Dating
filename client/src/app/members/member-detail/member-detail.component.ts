@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import {
   NgxGalleryAnimation,
@@ -20,7 +20,7 @@ import { PresenceService } from 'src/app/_services/presence.service';
   templateUrl: './member-detail.component.html',
   styleUrls: ['./member-detail.component.css'],
 })
-export class MemberDetailComponent implements OnInit , OnDestroy {
+export class MemberDetailComponent implements OnInit , OnDestroy, AfterViewInit{
   @ViewChild('memberTabs') memberTabs: TabsetComponent;
   member: any;
   galleryOptions: NgxGalleryOptions[];
@@ -42,12 +42,15 @@ export class MemberDetailComponent implements OnInit , OnDestroy {
     this.accountService.currentUser$.pipe(take(1)).subscribe((user:any) => this.user = user);
     this.router.routeReuseStrategy.shouldReuseRoute = () => false;
  }
-
-  ngOnInit(): void {
-    
+  ngAfterViewInit(): void {
     this.route.queryParams.subscribe((params) => {
       params.tab ? this.selectTab(parseInt(params.tab)) : this.selectTab(0);
     });
+  }
+
+  ngOnInit(): void {
+    
+
     this.galleryOptions = [
       {
         width: '600px',
@@ -94,7 +97,6 @@ export class MemberDetailComponent implements OnInit , OnDestroy {
       });
   }
   selectTab(tabId: number) {
-    debugger
     if(this.memberTabs){
     this.memberTabs.tabs[tabId].active = true;
   }

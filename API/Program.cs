@@ -60,7 +60,7 @@ app.UseMiddleware<ExeptionMiddelware>();
 app.UseHttpsRedirection();
 
 app.UseRouting();
-app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().AllowCredentials().WithOrigins("http://localhost:5001"));
+app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().AllowCredentials().WithOrigins("http://localhost:4200"));
 app.UseAuthentication();
 app.UseAuthorization();
 app.UseDefaultFiles();
