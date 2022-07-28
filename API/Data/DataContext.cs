@@ -9,8 +9,21 @@ namespace API.Data
         IdentityUserClaim<int>, AppUserRole, IdentityUserLogin<int>,
         IdentityRoleClaim<int>, IdentityUserToken<int>>
     {
-        public DataContext(DbContextOptions options) : base(options)
+        private readonly IConfiguration Configuration;
+
+        public DataContext(DbContextOptions options, IConfiguration configuration) : base(options)
         {
+            Configuration = configuration;
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder options)
+        {
+            var env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+            if (env == "Development")
+            {
+                var connectionString = Configuration.GetConnectionString("DefaultConnection1");
+                options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+            }
         }
         public DbSet<UserLike> Likes { get; set; }
         public DbSet<UserStatus> Status { get; set; }

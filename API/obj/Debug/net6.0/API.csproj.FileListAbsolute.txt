@@ -126,13 +126,10 @@ D:\AgDotNet\Dating\API\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
 D:\AgDotNet\Dating\API\bin\Debug\net6.0\MySql.Data.dll
 D:\AgDotNet\Dating\API\bin\Debug\net6.0\Ubiety.Dns.Core.dll
 D:\AgDotNet\Dating\API\bin\Debug\net6.0\ZstdNet.dll
-D:\AgDotNet\Dating\API\bin\Debug\net6.0\MySql.Data.EntityFrameworkCore.dll
-D:\AgDotNet\Dating\API\bin\Debug\net6.0\MySql.EntityFrameworkCore.dll
 D:\AgDotNet\Dating\API\bin\Debug\net6.0\MySqlConnector.dll
 D:\AgDotNet\Dating\API\bin\Debug\net6.0\Newtonsoft.Json.dll
 D:\AgDotNet\Dating\API\bin\Debug\net6.0\Npgsql.dll
 D:\AgDotNet\Dating\API\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
-D:\AgDotNet\Dating\API\bin\Debug\net6.0\Remotion.Linq.dll
 D:\AgDotNet\Dating\API\bin\Debug\net6.0\SQLitePCLRaw.batteries_v2.dll
 D:\AgDotNet\Dating\API\bin\Debug\net6.0\SQLitePCLRaw.core.dll
 D:\AgDotNet\Dating\API\bin\Debug\net6.0\SQLitePCLRaw.provider.e_sqlite3.dll
@@ -142,7 +139,6 @@ D:\AgDotNet\Dating\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\AgDotNet\Dating\API\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
 D:\AgDotNet\Dating\API\bin\Debug\net6.0\System.Drawing.Common.dll
 D:\AgDotNet\Dating\API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
-D:\AgDotNet\Dating\API\bin\Debug\net6.0\System.Interactive.Async.dll
 D:\AgDotNet\Dating\API\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\AgDotNet\Dating\API\bin\Debug\net6.0\System.Security.Permissions.dll
 D:\AgDotNet\Dating\API\bin\Debug\net6.0\System.Windows.Extensions.dll
@@ -182,3 +178,4 @@ D:\AgDotNet\Dating\API\obj\Debug\net6.0\refint\API.dll
 D:\AgDotNet\Dating\API\obj\Debug\net6.0\API.pdb
 D:\AgDotNet\Dating\API\obj\Debug\net6.0\API.genruntimeconfig.cache
 D:\AgDotNet\Dating\API\obj\Debug\net6.0\ref\API.dll
+D:\AgDotNet\Dating\API\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll

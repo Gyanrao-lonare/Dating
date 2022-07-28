@@ -70,19 +70,15 @@
               "target": "Package",
               "version": "[8.0.29, )"
             },
-            "MySql.Data.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[6.0.0-rc.1*, )"
-            },
-            "MySql.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[3.1.22, )"
-            },
             "MySqlConnector": {
               "target": "Package",
               "version": "[2.1.10, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.0-rc.1*, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[6.0.0-rc.1*, )"
             },
