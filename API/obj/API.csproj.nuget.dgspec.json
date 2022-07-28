@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\AgDotNet\\Dating\\API\\API.csproj": {}
+    "D:\\AgDotNet\\Dating\\api\\API.csproj": {}
   },
   "projects": {
-    "D:\\AgDotNet\\Dating\\API\\API.csproj": {
+    "D:\\AgDotNet\\Dating\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\AgDotNet\\Dating\\API\\API.csproj",
+        "projectUniqueName": "D:\\AgDotNet\\Dating\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "D:\\AgDotNet\\Dating\\API\\API.csproj",
+        "projectPath": "D:\\AgDotNet\\Dating\\api\\API.csproj",
         "packagesPath": "C:\\Users\\gyanrao\\.nuget\\packages\\",
-        "outputPath": "D:\\AgDotNet\\Dating\\API\\obj\\",
+        "outputPath": "D:\\AgDotNet\\Dating\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gyanrao\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -70,19 +70,15 @@
               "target": "Package",
               "version": "[8.0.29, )"
             },
-            "MySql.Data.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[6.0.0-rc.1*, )"
-            },
-            "MySql.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[3.1.22, )"
-            },
             "MySqlConnector": {
               "target": "Package",
               "version": "[2.1.10, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.0-rc.1*, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[6.0.0-rc.1*, )"
             },
