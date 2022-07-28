@@ -39,7 +39,8 @@ namespace API.Extenstions
                 // connection string, or development connection string from env var.
                  if (env == "Development")
                 {
-                     //    options.UseMySQL(config.GetConnectionString("DefaultConnection1"));
+                     var connectionString = config.GetConnectionString("DefaultConnection1");
+                     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
                     // Use connection string from file.
                     // connStr = config.GetConnectionString("DefaultConnection");
                 }

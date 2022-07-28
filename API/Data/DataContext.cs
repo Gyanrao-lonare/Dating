@@ -16,15 +16,15 @@ namespace API.Data
             Configuration = configuration;
         }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder options)
-        {
-            var env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
-            if (env == "Development")
-            {
-                var connectionString = Configuration.GetConnectionString("DefaultConnection1");
-                options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
-            }
-        }
+        // protected override void OnConfiguring(DbContextOptionsBuilder options)
+        // {
+        //     var env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+        //     if (env == "Development")
+        //     {
+        //         var connectionString = Configuration.GetConnectionString("DefaultConnection1");
+        //         options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+        //     }
+        // }
         public DbSet<UserLike> Likes { get; set; }
         public DbSet<UserStatus> Status { get; set; }
         public DbSet<Message> Messages { get; set; }
