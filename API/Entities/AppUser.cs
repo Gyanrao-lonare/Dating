@@ -24,9 +24,9 @@ namespace API.Entities
 
         public ICollection<Message> MessageSent { get; set; }
         public ICollection<Message> MessageRecived { get; set; }
-        public ICollection<AppUserRole> UserRoles {get; set;}
-
-
+        public ICollection<AppUserRole> UserRoles {get; set;} 
+        public ICollection<FriendRequest> RequestedRequests { get; set; }
+        public ICollection<FriendRequest> RecevedRequests { get; set; }
 
 
     }

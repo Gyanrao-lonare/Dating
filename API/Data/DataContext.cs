@@ -30,6 +30,7 @@ namespace API.Data
         public DbSet<Message> Messages { get; set; }
         public DbSet<Group> Groups { get; set; }
         public DbSet<Connection> Connections { get; set; }
+        public DbSet<FriendRequest> Freinds { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
@@ -71,6 +72,16 @@ namespace API.Data
             .HasOne(u => u.Recipient)
             .WithMany(m => m.MessageRecived)
             .OnDelete(DeleteBehavior.Restrict);
+
+             builder.Entity<FriendRequest>()
+            .HasOne(r => r.Requester)
+            .WithMany(u => u.RequestedRequests)
+            .OnDelete(DeleteBehavior.ClientCascade);
+                builder.Entity<FriendRequest>()
+            .HasOne(r => r.Receiver)
+            .WithMany(u => u.RecevedRequests)
+            .OnDelete(DeleteBehavior.ClientCascade);
+
         }
     }
 }
