@@ -11,14 +11,28 @@ import { PresenceService } from 'src/app/_services/presence.service';
 })
 export class MemberCardComponent implements OnInit {
 @Input() member : member;
+@Input() predicate;
   constructor(private memberService:MemberService,private toastr: ToastrService, 
     public presence: PresenceService ) { }
 
   ngOnInit(): void {
+    console.log(this.member);
 
   }
 
   likeUser(name){
     this.memberService.likeUser(name);
   }
+
+  sendFriendRequest(username : string){
+    this.memberService.sendFreindRequest(username);
+  }
+  confirmFreindRequest(id:number){
+    this.memberService.confirmFreindRequest(id);
+  }
+  deleteFreindRequest(id:number){
+    this.memberService.deleteFreindRequest(id);
+  }
+
+
 }

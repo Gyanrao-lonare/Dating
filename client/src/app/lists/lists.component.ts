@@ -10,7 +10,7 @@ import { MemberService } from '../_services/member.service';
 })
 export class ListsComponent implements OnInit {
   members: Partial<member[]>;
-  predicate = 'liked';
+  predicate = "liked";
   pageNumber = 1;
   pageSize = 5;
   pagination: Pagination;
@@ -18,19 +18,29 @@ export class ListsComponent implements OnInit {
   constructor(private memberService: MemberService) {}
 
   ngOnInit(): void {
-    this.loadMembers('liked');
+    this.loadMembers();
   }
-  loadMembers(type: string) {
+  loadMembers() {
+    if(this.predicate =='liked' || this.predicate =='likedBy'){
     this.memberService
-      .getLikedUser(type, this.pageNumber, this.pageSize)
+      .getLikedUser(this.predicate, this.pageNumber, this.pageSize)
       .subscribe(res=> {
         
         this.members = res.result;
         this.pagination = res.pagination;
       });
+    }else{
+      this.memberService
+      .getFriendList(this.predicate,this.pageNumber, this.pageSize)
+      .subscribe(res=> {      
+        this.members = res.result;
+        this.pagination = res.pagination;
+      });
+    }
+
   }
   pageChanged(event: any) {
     this.pageNumber = event.page;
-    this.loadMembers('liked');
+    this.loadMembers();
   }
 }

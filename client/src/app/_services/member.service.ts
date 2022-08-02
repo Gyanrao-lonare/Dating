@@ -15,7 +15,6 @@ export class MemberService {
   members: member[] = [];
   constructor(private http: HttpClient) {}
   getMembers(userParms: userParms) {
-    ;
     let params = getPaginationHEaders(userParms.pageNumber, userParms.pageSize);
 
     params = params.append('minAge', userParms.minAge.toString());
@@ -27,8 +26,6 @@ export class MemberService {
       this.http
     );
   }
-  
-  
 
   // end
 
@@ -50,7 +47,7 @@ export class MemberService {
   }
 
   setMainPhoto(photoId: number) {
-    return this.http.put(this.baseUrl + 'users/add-main-photo/' + photoId,{});
+    return this.http.put(this.baseUrl + 'users/add-main-photo/' + photoId, {});
   }
 
   likeUser(username: string) {
@@ -71,6 +68,39 @@ export class MemberService {
       parms,
       this.http
     );
+
     // return this.http.get<Partial<member[]>>(this.baseUrl + 'Likes?predicate='+ predicate);
+  }
+
+  getFriendList(predicate: string, pageNumber: number, pageSize: number) {
+    let parms = getPaginationHEaders(pageNumber, pageSize);
+    parms = parms.append('predicate', predicate);
+    return getPaginatedResults<Partial<member[]>>(
+      this.baseUrl + 'FriendRequest',
+      parms,
+      this.http
+    );
+  }
+  sendFreindRequest(username: string) {
+    return this.http
+      .post(this.baseUrl + 'FriendRequest/' + username, {})
+      .subscribe((res) => {
+        console.log(res);
+      });
+  }
+  confirmFreindRequest(id: number) {
+    debugger
+    return this.http
+      .put(this.baseUrl + 'FriendRequest/confirm/' + id, {})
+      .subscribe((res) => {
+        console.log(res);
+      });
+  }
+  deleteFreindRequest(id: number) {
+    return this.http
+      .delete(this.baseUrl + 'FriendRequest/' + id)
+      .subscribe((res) => {
+        console.log(res);
+      });
   }
 }

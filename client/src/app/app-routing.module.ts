@@ -26,6 +26,7 @@ const routes: Routes = [
       { path: 'memberlist', component: MemberListComponent },
       { path: 'memberlist/:username', component: MemberDetailComponent,resolve:{member:MemberDetailResolver}},
       { path: 'lists', component: ListsComponent },
+      { path: 'lists/:username', component: MemberDetailComponent,resolve:{member:MemberDetailResolver} },
       { path: 'messages', component: MessagesComponent },
       { path: 'admin', component: AdminPanelComponent,canActivate:[AdminGuard] },
     ],

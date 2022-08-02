@@ -76,10 +76,12 @@ namespace API.Data
              builder.Entity<FriendRequest>()
             .HasOne(r => r.Requester)
             .WithMany(u => u.RequestedRequests)
+             .HasForeignKey(s => s.RequesterId)
             .OnDelete(DeleteBehavior.ClientCascade);
                 builder.Entity<FriendRequest>()
             .HasOne(r => r.Receiver)
             .WithMany(u => u.RecevedRequests)
+             .HasForeignKey(s => s.Receiverid)
             .OnDelete(DeleteBehavior.ClientCascade);
 
         }
