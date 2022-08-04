@@ -52,6 +52,7 @@ namespace API.Data
               friends = friends.Where(friend =>friend.Status == true && (friend.Receiverid == requestParms.UserId || friend.RequesterId == requestParms.UserId));
               users = friends.Select(friend =>friend.Receiverid == requestParms.UserId ? friend.Requester : friend.Receiver);
             //   users = friends.Select(friend => friend.Receiver);
+            //   users = friends.Select(friend => friend.Requester);
             }
 
             if (requestParms.Predicate == "Friends")
@@ -75,7 +76,7 @@ namespace API.Data
                     userName = user.UserName,
                     knownAs = user.KnownAs,
                     Age = user.DateOfBirth.CalculateAge(),
-                    PhotoUrl = user.Photos.FirstOrDefault(p => p.IsMain).Url,
+                    PhotoUrl = user.Photos.FirstOrDefault(p => p.IsMain && p.IsAproved).Url,
                     City = user.City,
                     Id = user.Id,
                     Status = false

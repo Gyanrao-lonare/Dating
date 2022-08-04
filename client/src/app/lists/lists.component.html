@@ -1,5 +1,6 @@
 <div class="text-center mt-3">
-    <h2>{{predicate === "liked" ? "Members I like" : "Members Who Like me"}}</h2>
+    <h2>{{predicate === "liked" ? "Members I like" : predicate === "likedBy" ? "Members Who Like me": predicate === "Recives" ? "Members Who Request you be friend":
+        predicate === "Requests" ? "Your sent requests":"Your friends"}}</h2>
 </div>
 <div class="container mt-3">
     <div class="row">

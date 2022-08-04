@@ -15,7 +15,7 @@ namespace API.Helpers
         {
             CreateMap<AppUser, MemberDto>()
             .ForMember(dest => dest.photoUrl, opt => opt.MapFrom(src =>
-                src.Photos.FirstOrDefault(x => x.IsMain).Url))
+                src.Photos.FirstOrDefault(x => x.IsMain && x.IsAproved).Url))
                    .ForMember(dest => dest.Age, opt => opt.MapFrom(src => src.DateOfBirth.CalculateAge()));
             CreateMap<photo, photosDto>();
             CreateMap<memberUpdateDto, AppUser>();
@@ -24,9 +24,9 @@ namespace API.Helpers
             CreateMap<FriendRequest,FriendRequestDto>();
             CreateMap<Message,MessageDto>()
             .ForMember(dest => dest.SenderPhotoUrl, opt => opt.MapFrom(src=>
-            src.Sender.Photos.FirstOrDefault(x => x.IsMain).Url))
+            src.Sender.Photos.FirstOrDefault(x => x.IsMain && x.IsAproved).Url))
             .ForMember(dest => dest.RecipientPhotoUrl, opt => opt.MapFrom(src=>
-            src.Recipient.Photos.FirstOrDefault(x => x.IsMain).Url));
+            src.Recipient.Photos.FirstOrDefault(x => x.IsMain && x.IsAproved).Url));
 
         }
     }

@@ -1,12 +1,12 @@
 <div class="row">
-  <div class="col-2" *ngFor="let index of member.photos; index as i">
+  <div class="col-2"  *ngFor="let index of member.photos; index as i">
     <img
       src="{{ member.photos[i].url }}"
       alt="{{ member.photos[i].url }}"
       class="img-thumbnail p-1"
     />
-    <div class="text-center">
-      <button (click)="setProfileImg(member.photos[i].id)" class="btn btn-sm">Main</button>
+    <div class="text-center" *ngIf="member.photos">
+      <button *ngIf="member.photos[i].isAproved" (click)="setProfileImg(member.photos[i].id)" class="btn btn-sm">Main</button>
       <button (click)="deleteImage(member.photos[i].id)" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></button>
     </div>
   </div>

@@ -82,11 +82,13 @@ export class MemberDetailComponent implements OnInit , OnDestroy, AfterViewInit{
   }
   imageGenrator() {
     this.member.photos.forEach((item) => {
+      if(item.isAproved){
       this.galleryImages.push({
         small: item.url,
         medium: item.url,
         big: item.url,
       });
+    }
     });
   }
   loadMessageThread() {

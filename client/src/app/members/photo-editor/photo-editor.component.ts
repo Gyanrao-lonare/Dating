@@ -30,13 +30,14 @@ export class PhotoEditorComponent implements OnInit {
   
   ngOnInit(): void {
     this.initializeUploader();
+    this.member.photos =  this.member.photos.filter(x=> x.IsAproved);
+
   }
   public fileOverBase(e: any): void {
     
     this.hasBaseDropZoneOver = e;
   }
-  initializeUploader() {
-    
+  initializeUploader() {   
     this.uploader = new FileUploader({
       url: this.baseUrl + 'Users/add-photo',
       authToken: "Bearer " + this.user.token,
