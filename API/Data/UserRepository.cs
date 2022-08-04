@@ -29,14 +29,14 @@ namespace API.Data
         public async Task<AppUser> GetUserByUsernameAsync(string username)
         {
             return await _Context.Users
-            .Include(p => p.Photos.Where(d=> d.IsAproved))
+            .Include(p => p.Photos)
             .SingleOrDefaultAsync(x => x.UserName == username);
         }
 
         public async Task<IEnumerable<AppUser>> GetUsersAsync()
         {
             return await _Context.Users
-            .Include(p => p.Photos.Where(d=> d.IsAproved))
+            .Include(p => p.Photos)
             .ToListAsync();
         }
 
@@ -76,26 +76,6 @@ namespace API.Data
             .Where(x => x.UserName == username)
             .ProjectTo<MemberDto>(_mapper.ConfigurationProvider)
             .SingleOrDefaultAsync();
-        }
-
-        public void UpdatePhotosAsync(photo photo)
-        {
-             _Context.Entry(photo).State = EntityState.Modified;
-            // throw new NotImplementedException();
-        }
-
-        public IEnumerable<photo> GetPhotosAsync()
-        {
-            return  _Context.Photos;
-            // throw new NotImplementedException();
-
-
-        }
-
-        public async Task<photo> GetphotoAsync(int id)
-        {
-            return await _Context.Photos.FindAsync(id);
-            // throw new NotImplementedException();
         }
     }
 }

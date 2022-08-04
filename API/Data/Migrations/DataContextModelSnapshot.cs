@@ -174,33 +174,6 @@ namespace API.Data.Migrations
                     b.ToTable("Connections");
                 });
 
-            modelBuilder.Entity("API.Entities.FriendRequest", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("DateRequested")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<int>("Receiverid")
-                        .HasColumnType("int");
-
-                    b.Property<int>("RequesterId")
-                        .HasColumnType("int");
-
-                    b.Property<bool>("Status")
-                        .HasColumnType("tinyint(1)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("Receiverid");
-
-                    b.HasIndex("RequesterId");
-
-                    b.ToTable("Freinds");
-                });
-
             modelBuilder.Entity("API.Entities.Group", b =>
                 {
                     b.Property<string>("Name")
@@ -220,7 +193,7 @@ namespace API.Data.Migrations
                     b.Property<string>("Content")
                         .HasColumnType("longtext");
 
-                    b.Property<DateTime?>("DateRead")
+                    b.Property<DateTime>("DateRead")
                         .HasColumnType("datetime(6)");
 
                     b.Property<DateTime>("DateSent")
@@ -261,9 +234,6 @@ namespace API.Data.Migrations
 
                     b.Property<int>("AppUserId")
                         .HasColumnType("int");
-
-                    b.Property<bool>("IsAproved")
-                        .HasColumnType("tinyint(1)");
 
                     b.Property<bool>("IsMain")
                         .HasColumnType("tinyint(1)");
@@ -426,25 +396,6 @@ namespace API.Data.Migrations
                         .HasForeignKey("GroupName");
                 });
 
-            modelBuilder.Entity("API.Entities.FriendRequest", b =>
-                {
-                    b.HasOne("API.Entities.AppUser", "Receiver")
-                        .WithMany("RecevedRequests")
-                        .HasForeignKey("Receiverid")
-                        .OnDelete(DeleteBehavior.ClientCascade)
-                        .IsRequired();
-
-                    b.HasOne("API.Entities.AppUser", "Requester")
-                        .WithMany("RequestedRequests")
-                        .HasForeignKey("RequesterId")
-                        .OnDelete(DeleteBehavior.ClientCascade)
-                        .IsRequired();
-
-                    b.Navigation("Receiver");
-
-                    b.Navigation("Requester");
-                });
-
             modelBuilder.Entity("API.Entities.Message", b =>
                 {
                     b.HasOne("API.Entities.AppUser", "Recipient")
@@ -546,10 +497,6 @@ namespace API.Data.Migrations
                     b.Navigation("MessageSent");
 
                     b.Navigation("Photos");
-
-                    b.Navigation("RecevedRequests");
-
-                    b.Navigation("RequestedRequests");
 
                     b.Navigation("UserRoles");
                 });

@@ -31,12 +31,12 @@ namespace API.Controllers
         public async Task<ActionResult<MessageDto>> CreateMessage(CreateMessageDto createMessageDto)
         {
             var username = User.GetUserName();
-            if (username == createMessageDto.RecipientUsername.ToLower()) return BadRequest("You can not sent message to yourself");
+            if (username == createMessageDto.RecipientUsername.ToLower()) return BadRequest("You Can not Sent message to Yourself");
 
             var sender = await _userRepository.GetUserByUsernameAsync(username);
             var recipient = await _userRepository.GetUserByUsernameAsync(createMessageDto.RecipientUsername);
 
-            if (recipient == null) return BadRequest("User not found");
+            if (recipient == null) return BadRequest("User Not Found");
             var message = new Message
             {
                 Sender = sender,
@@ -46,9 +46,9 @@ namespace API.Controllers
                 Content = createMessageDto.Content
             };
             _messageRepository.AddMessage(message);
-            if (await _messageRepository.SaveAllAsync()) return Ok("Message sent");
+            if (await _messageRepository.SaveAllAsync()) return Ok("message Sent");
 
-            return BadRequest("Message not sent");
+            return BadRequest("message not sent");
         }
 
         [HttpGet]
@@ -87,7 +87,7 @@ namespace API.Controllers
 
             if(await _messageRepository.SaveAllAsync()) return Ok();
 
-            return BadRequest("Problem deleting msg");
+            return BadRequest("probem Deleting msg");
 
         }
     }
