@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\AgDotNet\\Dating\\api\\API.csproj": {}
+    "D:\\AgDotNet\\Dating\\API\\API.csproj": {}
   },
   "projects": {
-    "D:\\AgDotNet\\Dating\\api\\API.csproj": {
+    "D:\\AgDotNet\\Dating\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\AgDotNet\\Dating\\api\\API.csproj",
+        "projectUniqueName": "D:\\AgDotNet\\Dating\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "D:\\AgDotNet\\Dating\\api\\API.csproj",
+        "projectPath": "D:\\AgDotNet\\Dating\\API\\API.csproj",
         "packagesPath": "C:\\Users\\gyanrao\\.nuget\\packages\\",
-        "outputPath": "D:\\AgDotNet\\Dating\\api\\obj\\",
+        "outputPath": "D:\\AgDotNet\\Dating\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gyanrao\\AppData\\Roaming\\NuGet\\NuGet.Config",
