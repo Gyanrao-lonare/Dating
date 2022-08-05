@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Je17eOc22bYXOZKE4m+IH/hzXosCao45orr3/yPgJLE=",
+  "Hash": "0jZH5fVqMswKbDxrMDM2DqvZTpWnp+4y1jm2GLXxtdw=",
   "Source": "API",
   "BasePath": "_content/API",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "API\\wwwroot",
       "Source": "API",
-      "ContentRoot": "D:\\AgDotNet\\Dating\\API\\wwwroot\\",
+      "ContentRoot": "D:\\AgDotNet\\Dating\\api\\wwwroot\\",
       "BasePath": "_content/API",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\AgDotNet\\Dating\\API\\wwwroot\\3rdpartylicenses.txt",
+      "Identity": "D:\\AgDotNet\\Dating\\api\\wwwroot\\3rdpartylicenses.txt",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AgDotNet\\Dating\\API\\wwwroot\\",
+      "ContentRoot": "D:\\AgDotNet\\Dating\\api\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "3rdpartylicenses.txt",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\3rdpartylicenses.txt"
     },
     {
-      "Identity": "D:\\AgDotNet\\Dating\\API\\wwwroot\\assets\\images\\userImg.png",
+      "Identity": "D:\\AgDotNet\\Dating\\api\\wwwroot\\assets\\images\\userImg.png",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AgDotNet\\Dating\\API\\wwwroot\\",
+      "ContentRoot": "D:\\AgDotNet\\Dating\\api\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "assets/images/userImg.png",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\userImg.png"
     },
     {
-      "Identity": "D:\\AgDotNet\\Dating\\API\\wwwroot\\favicon.ico",
+      "Identity": "D:\\AgDotNet\\Dating\\api\\wwwroot\\favicon.ico",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AgDotNet\\Dating\\API\\wwwroot\\",
+      "ContentRoot": "D:\\AgDotNet\\Dating\\api\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\AgDotNet\\Dating\\API\\wwwroot\\fontawesome-webfont.2b13baa7dd4f54c9.eot",
+      "Identity": "D:\\AgDotNet\\Dating\\api\\wwwroot\\fontawesome-webfont.2b13baa7dd4f54c9.eot",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AgDotNet\\Dating\\API\\wwwroot\\",
+      "ContentRoot": "D:\\AgDotNet\\Dating\\api\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "fontawesome-webfont.2b13baa7dd4f54c9.eot",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\fontawesome-webfont.2b13baa7dd4f54c9.eot"
     },
     {
-      "Identity": "D:\\AgDotNet\\Dating\\API\\wwwroot\\fontawesome-webfont.8a7cb27d142e3e19.ttf",
+      "Identity": "D:\\AgDotNet\\Dating\\api\\wwwroot\\fontawesome-webfont.8a7cb27d142e3e19.ttf",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AgDotNet\\Dating\\API\\wwwroot\\",
+      "ContentRoot": "D:\\AgDotNet\\Dating\\api\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "fontawesome-webfont.8a7cb27d142e3e19.ttf",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\fontawesome-webfont.8a7cb27d142e3e19.ttf"
     },
     {
-      "Identity": "D:\\AgDotNet\\Dating\\API\\wwwroot\\fontawesome-webfont.cf011583fb81df9f.woff",
+      "Identity": "D:\\AgDotNet\\Dating\\api\\wwwroot\\fontawesome-webfont.cf011583fb81df9f.woff",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AgDotNet\\Dating\\API\\wwwroot\\",
+      "ContentRoot": "D:\\AgDotNet\\Dating\\api\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "fontawesome-webfont.cf011583fb81df9f.woff",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\fontawesome-webfont.cf011583fb81df9f.woff"
     },
     {
-      "Identity": "D:\\AgDotNet\\Dating\\API\\wwwroot\\fontawesome-webfont.da909aa098b0ee2d.svg",
+      "Identity": "D:\\AgDotNet\\Dating\\api\\wwwroot\\fontawesome-webfont.da909aa098b0ee2d.svg",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AgDotNet\\Dating\\API\\wwwroot\\",
+      "ContentRoot": "D:\\AgDotNet\\Dating\\api\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "fontawesome-webfont.da909aa098b0ee2d.svg",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\fontawesome-webfont.da909aa098b0ee2d.svg"
     },
     {
-      "Identity": "D:\\AgDotNet\\Dating\\API\\wwwroot\\fontawesome-webfont.e9955780856cf8aa.woff2",
+      "Identity": "D:\\AgDotNet\\Dating\\api\\wwwroot\\fontawesome-webfont.e9955780856cf8aa.woff2",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AgDotNet\\Dating\\API\\wwwroot\\",
+      "ContentRoot": "D:\\AgDotNet\\Dating\\api\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "fontawesome-webfont.e9955780856cf8aa.woff2",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\fontawesome-webfont.e9955780856cf8aa.woff2"
     },
     {
-      "Identity": "D:\\AgDotNet\\Dating\\API\\wwwroot\\index.html",
+      "Identity": "D:\\AgDotNet\\Dating\\api\\wwwroot\\index.html",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AgDotNet\\Dating\\API\\wwwroot\\",
+      "ContentRoot": "D:\\AgDotNet\\Dating\\api\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "index.html",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "D:\\AgDotNet\\Dating\\API\\wwwroot\\main.8268d23e7286f199.js",
+      "Identity": "D:\\AgDotNet\\Dating\\api\\wwwroot\\main.8268d23e7286f199.js",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AgDotNet\\Dating\\API\\wwwroot\\",
+      "ContentRoot": "D:\\AgDotNet\\Dating\\api\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "main.8268d23e7286f199.js",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\main.8268d23e7286f199.js"
     },
     {
-      "Identity": "D:\\AgDotNet\\Dating\\API\\wwwroot\\polyfills.d7bd9d69524573e2.js",
+      "Identity": "D:\\AgDotNet\\Dating\\api\\wwwroot\\polyfills.d7bd9d69524573e2.js",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AgDotNet\\Dating\\API\\wwwroot\\",
+      "ContentRoot": "D:\\AgDotNet\\Dating\\api\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "polyfills.d7bd9d69524573e2.js",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\polyfills.d7bd9d69524573e2.js"
     },
     {
-      "Identity": "D:\\AgDotNet\\Dating\\API\\wwwroot\\runtime.01fec06f14767966.js",
+      "Identity": "D:\\AgDotNet\\Dating\\api\\wwwroot\\runtime.01fec06f14767966.js",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AgDotNet\\Dating\\API\\wwwroot\\",
+      "ContentRoot": "D:\\AgDotNet\\Dating\\api\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "runtime.01fec06f14767966.js",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\runtime.01fec06f14767966.js"
     },
     {
-      "Identity": "D:\\AgDotNet\\Dating\\API\\wwwroot\\styles.a243c243dc482be6.css",
+      "Identity": "D:\\AgDotNet\\Dating\\api\\wwwroot\\styles.a243c243dc482be6.css",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\AgDotNet\\Dating\\API\\wwwroot\\",
+      "ContentRoot": "D:\\AgDotNet\\Dating\\api\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "styles.a243c243dc482be6.css",
       "AssetKind": "All",
