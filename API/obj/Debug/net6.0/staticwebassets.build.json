@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VtTSxMOEnuK50UCyIBN6Tf5TYgEj62rerunxIf+kaso=",
+  "Hash": "GfkE4wRGO07j1YBCyVuLbQxR200vNpV8xFFRsrygMfo=",
   "Source": "API",
   "BasePath": "_content/API",
   "Mode": "Default",
@@ -170,23 +170,6 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "D:\\AgDotNet\\Dating\\api\\wwwroot\\main.8f231adba11267c8.js",
-      "SourceId": "API",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\AgDotNet\\Dating\\api\\wwwroot\\",
-      "BasePath": "_content/API",
-      "RelativePath": "main.8f231adba11267c8.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\main.8f231adba11267c8.js"
-    },
-    {
       "Identity": "D:\\AgDotNet\\Dating\\api\\wwwroot\\polyfills.d7bd9d69524573e2.js",
       "SourceId": "API",
       "SourceType": "Discovered",
@@ -239,3 +222,4 @@
     }
   ]
 }
+
