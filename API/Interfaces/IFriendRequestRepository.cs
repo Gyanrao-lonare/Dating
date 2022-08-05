@@ -7,6 +7,7 @@ namespace API.Interfaces
 
     public interface IFriendRequestRepository
     {
+        
        
         void SendRequest(FriendRequest friendRequest);
         void DeleteRequest(FriendRequest friendRequest);

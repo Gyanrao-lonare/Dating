@@ -15,6 +15,8 @@ namespace API.Data
             _context = context;
         }
 
+        
+
         public void DeleteRequest(FriendRequest friendRequest)
         {
             _context.Freinds.Remove(friendRequest);

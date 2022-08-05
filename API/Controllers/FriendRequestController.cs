@@ -29,6 +29,7 @@ namespace API.Controllers
         public async Task<ActionResult> SendRequest(string username)
         {
 
+
             // List<FriendRequest> allRequests   = new List<FriendRequest>();
             var RequesterId = User.GetUserId();
             var LikedUser = await _userRepository.GetUserByUsernameAsync(username);
@@ -40,6 +41,7 @@ namespace API.Controllers
             if (contactExists) return BadRequest("Already Requested");
             var request = new FriendRequest
             {
+
                 Receiverid = LikedUser.Id,
                 RequesterId = RequesterId,
                 Status = false,
@@ -52,6 +54,7 @@ namespace API.Controllers
             return BadRequest("failed to Like User");
 
         }
+
 
         [HttpGet]
 
