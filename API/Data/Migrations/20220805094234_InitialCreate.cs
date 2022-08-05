@@ -334,6 +334,7 @@ namespace API.Data.Migrations
                     Url = table.Column<string>(type: "longtext", nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     IsMain = table.Column<bool>(type: "tinyint(1)", nullable: false),
+                    IsAproved = table.Column<bool>(type: "tinyint(1)", nullable: false),
                     PublicId = table.Column<string>(type: "longtext", nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     AppUserId = table.Column<int>(type: "int", nullable: false)

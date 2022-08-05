@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20220729101119_InitialCreate")]
+    [Migration("20220805094234_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -263,6 +263,9 @@ namespace API.Data.Migrations
 
                     b.Property<int>("AppUserId")
                         .HasColumnType("int");
+
+                    b.Property<bool>("IsAproved")
+                        .HasColumnType("tinyint(1)");
 
                     b.Property<bool>("IsMain")
                         .HasColumnType("tinyint(1)");
