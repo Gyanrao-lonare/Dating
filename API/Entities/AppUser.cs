@@ -27,6 +27,7 @@ namespace API.Entities
         public ICollection<AppUserRole> UserRoles {get; set;} 
         public ICollection<FriendRequest> RequestedRequests { get; set; }
         public ICollection<FriendRequest> RecevedRequests { get; set; }
+        
 
 
     }
